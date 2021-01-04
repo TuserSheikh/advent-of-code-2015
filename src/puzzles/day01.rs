@@ -1,7 +1,7 @@
 use std::env;
 use std::fs;
 
-pub fn not_quite_isp_first() -> i32 {
+pub fn part_one() -> i32 {
     let file_path = env::var("CARGO_MANIFEST_DIR").unwrap() + "/input/01.txt";
     let directions = fs::read_to_string(file_path).unwrap();
 
@@ -16,7 +16,7 @@ pub fn not_quite_isp_first() -> i32 {
     floor
 }
 
-pub fn not_quite_isp_second() -> i32 {
+pub fn part_two() -> i32 {
     let file_path = env::var("CARGO_MANIFEST_DIR").unwrap() + "/input/01.txt";
     let directions = fs::read_to_string(file_path).unwrap();
 
